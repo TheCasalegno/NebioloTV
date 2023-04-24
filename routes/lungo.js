@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const MongoClient = require("mongodb").MongoClient;
-const urldb = `mongodb+srv://thecasalegno:VD8FBjcrswvjdQtM@nebiolotv.yknvfqp.mongodb.net/test`;
+const urldb = process.env.db;
 
 router.post("/", (req, res) => {
   MongoClient.connect(urldb, function (err, db) {

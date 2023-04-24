@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const MongoClient = require("mongodb").MongoClient;
-const urldb = `mongodb+srv://thecasalegno:VD8FBjcrswvjdQtM@nebiolotv.yknvfqp.mongodb.net/test`;
+const urldb = process.env.db;
 
 app.use(express.urlencoded({ extended: true }))
 app.use(express.static('views'));
