@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NebioloTV</title>
+    <meta http-equiv="refresh" content="10">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+            
+        h1{  font-family: 'Ubuntu', sans-serif;}
+        h2{  animation-name: text;
+animation-duration: 1s; font-family: 'Ubuntu', sans-serif;}
+        h3{  font-family: 'Ubuntu', sans-serif;}
+        p{  font-family: 'Ubuntu', sans-serif;}
+
+        div{
+            border-width: 2px;
+            border-color: black;
+            border-radius: 20px;
+            border-style: solid;
+            width: 200px;
+        }
+
+        .blink {
+  animation: blink 1s steps(1, end);
+
+  height: 100px;
+  width: 100px;
+  background-color: #d30000;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+@keyframes text {
+  0%   {color: black;}
+  100%  {color: red;}
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+    </style>
+    <table>
+        <tr>
+          <td>    <div>
+            <h2 style="text-align: center;">Salto in Alto:</h2>
+            <p style="text-align: center;">Pettorale: <h2 style="text-align: center;"><%-pettoraleHJ %></h2></p>
+            <p style="text-align: center;">Misura:<h2 style="text-align: center;"><%-misuraHJ %></h2></p>
+        </div></td>
+          <td>    <div>
+            <h2 style="text-align: center;">Salto in Lungo:</h2>
+            <p style="text-align: center;">Pettorale: <h2 style="text-align: center;"><%-pettoraleLJ %></h2></p>
+            <p style="text-align: center;">Misura:<h2 style="text-align: center;"><%-misuraLJ %></h2></p>
+        </div></td>
+          <td>    <div>
+            <h2 style="text-align: center;">Getto del Peso:</h2>
+            <p style="text-align: center;">Pettorale: <h2 style="text-align: center;"><%-pettoraleP %></h2></p>
+            <p style="text-align: center;">Misura:<h2 style="text-align: center;"><%-misuraP %></h2></p>
+        </div></td>
+        </tr>
+        <tr>
+          <td>    <div>
+            <h2 style="text-align: center;">Lancio del Disco:</h2>
+            <p style="text-align: center;">Pettorale: <h2 style="text-align: center;"><%-pettoraleD %></h2></p>
+            <p style="text-align: center;">Misura:<h2 style="text-align: center;"><%-misuraD %></h2></p>
+        </div></td>
+          <td>    <div>
+            <h2 style="text-align: center;">Lancio del Giavellotto:</h2>
+            <p style="text-align: center;">Pettorale: <h2 style="text-align: center;"><%-pettoraleG %></h2></p>
+            <p style="text-align: center;">Misura:<h2 style="text-align: center;"><%-misuraG %></h2></p>
+        </div></td>
+          <td>    <div>
+            <h2 style="text-align: center;">Lancio del Martello:</h2>
+            <p style="text-align: center;">Pettorale: <h2 style="text-align: center;"><%-pettoraleM %></h2></p>
+            <p style="text-align: center;">Misura:<h2 style="text-align: center;"><%-misuraM %></h2></p>
+        </div></td>
+        </tr>
+      </table>
+
+      <span class="blink"></span>
+</body>
+</html>
